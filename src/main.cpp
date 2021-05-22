@@ -36,7 +36,7 @@ void RandomBiggerDelay() //Will sleep from 15 - 25 seconds
 
 int main()
 {
-	HWND hwnd = FindWindowA(NULL, "#hello - Discord");
+	HWND hwnd = FindWindowA(NULL, "#general - Discord");
 	CHWND* _hwnd = new CHWND(hwnd);
 
 	std::thread focus_thread(&_main::focus, hwnd);
